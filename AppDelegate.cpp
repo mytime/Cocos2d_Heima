@@ -2,6 +2,7 @@
 #include "HelloWorldScene.h"
 #include "MyScene.h"
 #include "MyLayer.h"
+#include "T01LayerAnchorPoint.h"
 
 USING_NS_CC;
 
@@ -79,7 +80,8 @@ bool AppDelegate::applicationDidFinishLaunching() {
     // create a scene. it's an autorelease object
     //auto scene = HelloWorld::createScene();
 	//auto scene = MyScene::create();
-	auto scene = MyLayer::scene();
+	//auto scene = MyLayer::scene();
+	auto scene = T01LayerAnchorPoint::scene();
 
 
     // run
