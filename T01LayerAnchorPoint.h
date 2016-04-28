@@ -26,7 +26,7 @@ public:
 
 	static Scene *scene();					//预定义场景
 
-	void myDraw();							//绘制
+	void draw2();							//绘制
 	void mySchedule(float dt);				//定时器
 	Sprite * spr;
 

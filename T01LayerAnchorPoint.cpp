@@ -49,7 +49,9 @@ bool T01LayerAnchorPoint::init()
 	spr = Sprite::create("anchor3.png");
 
 	//锚点(精灵左下角位置在屏幕中心位置)
-	spr->setAnchorPoint(ccp(0, 0));
+	//spr->setAnchorPoint(ccp(0, 0));
+	//忽略锚点
+	spr->ignoreAnchorPointForPosition(true);
 
 	//精灵放置位置
 	spr->setPosition(ccp(visibleSize.width / 2, visibleSize.height / 2));
@@ -64,7 +66,7 @@ bool T01LayerAnchorPoint::init()
 	return true;
 }
 
-void T01LayerAnchorPoint::myDraw()
+void T01LayerAnchorPoint::draw2()
 {
 	Size visibleSize = Director::getInstance()->getVisibleSize();
 
